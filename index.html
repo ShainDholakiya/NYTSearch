@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>New York Times Search</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">New York Times Search</h1>
+            </div>
+          </div>
+          <div class="container" style="border: solid 1px navy">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputText1">Search Term:</label>
+              <input type="email" class="form-control" id="search_term" placeholder="jj">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Number of Records to Retrieve:</label>
+                <select class="form-control" id="number_records">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputText1">Start Year (Optional):</label>
+                <input type="num" class="form-control" id="exampleInputText1">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputText1">End Year (Optional):</label>
+                <input type="num" class="form-control" id="exampleInputText1">
+              </div>
+            <button id="search" class="btn btn-primary">Search</button>
+          </form>
+        </div>
+        <div class="container" style="border: solid 1px navy">
+            <div>
+              <ul class="articles">
+              </ul>
+            </div>
+        </div>
+        <script src ="assets/javascript/app.js"></script>
+    </body>
+</html>
